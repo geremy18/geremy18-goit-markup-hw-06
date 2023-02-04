@@ -256,6 +256,79 @@ header {
   text-align: center;
 }
 
+.box-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-modal{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  padding-bottom: 12px;
+  margin-top: 40px;
+}
+
+.modal-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form input{
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 271px;
+  padding-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-color: #2f303a;
+}
+
+.modal-form textarea{
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 271px;
+  padding-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-color: #2f303a;
+  
+}
+
+#validator{
+  display: block;
+}
+
+.modal-form input:hover
+{
+  border-color: cadetblue;
+}
+
+.button-enviar{
+  background-color: #2196f3;
+  border-color: #2196f3;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.8;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px 75px;
+}
+
 .titulo h1 {
   width: 696px;
   margin: 30px auto;

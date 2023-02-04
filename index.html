@@ -59,8 +59,31 @@
       </div>
     </header>
     <main>
+      
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <div class="box-form">
+            <p class="text-modal">Deje sus datos, nos contactaremos con usted</p>          
+            <div class="modal-form">
+              <label for="name">Nombre<br>
+                <input type="text" name="name" id="name">
+              </label>
+              <label for="phone">Telefono<br>
+                <input type="number" name="phone" id="phone">
+              </label>
+              <label for="mailto">Correo<br>
+                <input type="text" name="mailto" id="mailto">
+              </label>
+              <label for="comment">Comentarios<br>
+                <textarea rows="5" name="comment" id="comment" placeholder="Introduzca el texto"></textarea>
+              </label>
+              <label for="verification"  id="validator">
+                <input type="checkbox" name="validator" value="verification">
+                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+              </label for="button">
+              <button type="button" class="button-enviar">Enviar</button>
+            </div>
+          </div>
           <button type="button" class="button-close" data-modal-close>
             <svg class="button-svg">
               <use href="./images/symbol-defs.svg#icon-close"></use>
