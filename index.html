@@ -66,22 +66,44 @@
             <p class="text-modal">Deje sus datos, nos contactaremos con usted</p>          
             <div class="modal-form">
               <label for="name">Nombre<br>
-                <input type="text" name="name" id="name">
+                <div class="box-input">
+                  <div class="form-wrapper">
+                    <svg class="icon-form">
+                      <use href="./images/symbol-defs.svg#icon-name"></use>
+                    </svg>
+                  </div>
+                  <input type="text" name="name" class="form-input">
+                </div>
               </label>
               <label for="phone">Telefono<br>
-                <input type="number" name="phone" id="phone">
+                <div class="box-input">
+                  <div class="form-wrapper">
+                    <svg class="icon-form">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                  <input type="text" name="phone" class="form-input">
+                </div>                
               </label>
               <label for="mailto">Correo<br>
-                <input type="text" name="mailto" id="mailto">
+                <div class="box-input">
+                  <div class="form-wrapper">
+                    <svg class="icon-form">
+                      <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                  </div>
+                  <input type="text" name="mailto" class="form-input">
+                </div>                
               </label>
               <label for="comment">Comentarios<br>
-                <textarea rows="5" name="comment" id="comment" placeholder="Introduzca el texto"></textarea>
+                <textarea rows="5" name="comment" class="form-input-area" placeholder="Introduzca el texto"></textarea>
               </label>
               <label for="verification"  id="validator">
-                <input type="checkbox" name="validator" value="verification">
-                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
-              </label for="button">
-              <button type="button" class="button-enviar">Enviar</button>
+                <input type="checkbox" name="validator" value="verification" class="form-validation">
+                <p class="text-validator">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+              </label>
+              <button for="button" type="button" class="button-enviar">Enviar
+              </button>
             </div>
           </div>
           <button type="button" class="button-close" data-modal-close>
@@ -480,6 +502,22 @@
             </svg>
           </li>
         </ul>
+      </div>
+      <div class="subscription-mail">
+        <p>SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+        <div class="box-subscription">
+          <label for="mail">
+            <input type="text" name="mail" class="form-subs" placeholder="Correo electronico">
+          </label>
+          <div class="box-button-subs">
+              <button type="button" class="button-subs" data-modal-open>
+              Suscribase
+                <svg class="icon-subs">
+                  <use href="./images/symbol-defs.svg#icon-suscribir"></use>
+                </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
