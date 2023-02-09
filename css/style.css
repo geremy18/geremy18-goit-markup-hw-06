@@ -215,6 +215,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
+  padding: 40px;
 
   min-width: 528px;
   min-height: 581px;
@@ -244,9 +245,10 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  display: block;
+  display: flex;
   position: absolute;
-  margin: 8px;
+  top: 10px;
+  right: 10px;
 }
 
 .titulo {
@@ -273,7 +275,6 @@ header {
 
   color: #212121;
   padding-bottom: 12px;
-  margin-top: 40px;
 }
 
 .modal-form{
@@ -349,16 +350,14 @@ header {
   padding-left: 42px;
   padding-bottom: 12px;
   margin-top: 4px;
+  border: 1px solid #212121;
   border-radius: 4px;
-  outline: none;
-  border-style: solid;
   cursor: pointer;
 }
 
 .form-input-area{
   border-radius: 4px;
-  outline: none;
-  border-style: solid;
+  border: 1px solid #212121;
   cursor: pointer;
 }
 
